@@ -1,0 +1,65 @@
+:root {
+  --cal-button-size: 60px;
+  --cal-window-height: 50px;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.cal-result-window {
+  grid-column: 1/5;
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: space-between;
+  border: 1px solid black;
+}
+.cal-result-operator {
+  line-height: var(--cal-window-height);
+  font-size: 30px;
+  flex-basis: 40px;
+}
+.cal-result-number {
+  line-height: var(--cal-window-height);
+  font-size: 28px;
+  text-align: right;
+  flex-grow: 3;
+  padding-right: 10px;
+}
+
+.cal-button-container {
+  width: 300px;
+  height: 380px;
+  display: grid;
+  grid-template-columns: repeat(4, var(--cal-button-size));
+  grid-template-rows: var(--cal-window-height) repeat(5, var(--cal-button-size));
+  grid-gap: 10px;
+}
+
+.cal-button-general {
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.cal-command-button {
+  background-color: #4488ff;
+  color: black;
+}
+.cal-operator-button {
+  background-color: orange;
+  color: white;
+}
+.cal-operator-highlight {
+  background-color: white;
+  color: black;
+}
+.cal-number-button {
+  background-color: grey;
+  color: white;
+}
+.cal-zero-button {
+  background-color: grey;
+  color: white;
+  grid-column: 1/3;
+}
