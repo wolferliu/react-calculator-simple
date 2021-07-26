@@ -1,8 +1,9 @@
 {
-  "name": "react",
+  "name": "react-calculator-simple",
   "version": "1.0.0",
-  "description": "React example starter project",
-  "keywords": ["react", "starter"],
+  "homepage": "./",
+  "description": "",
+  "keywords": [],
   "main": "src/index.js",
   "dependencies": {
     "react": "17.0.2",
